@@ -1,0 +1,13 @@
+{
+  "name": "yourstruly",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Yours Truly Contracting website",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=index.html",
+    "start": "live-server --port=3000 --no-browser"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

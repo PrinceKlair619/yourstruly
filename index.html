@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yours Truly Contracting Group LLC | Licensed Contractor in Yonkers, NY</title>
+<meta name="description" content="Licensed and insured general contractor in Yonkers, NY. Kitchens, bathrooms, extensions, roofing, masonry, plumbing and electrical across Westchester, Rockland, Nassau, Suffolk and NYC. 24-hour emergency service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "Yours Truly Contracting Group LLC",
+  "slogan": "Your Vision Is Our Job",
+  "telephone": "+1-914-771-2566",
+  "email": "yourstrulycontracting@gmail.com",
+  "address": { "@type": "PostalAddress", "streetAddress": "16 Covington Rd", "addressLocality": "Yonkers", "addressRegion": "NY", "addressCountry": "US" },
+  "areaServed": ["Westchester County", "Rockland County", "Nassau County", "Suffolk County", "New York City"],
+  "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
+<style>
+/* ============ Tokens: steel slate, concrete, safety yellow ============ */
+:root{
+  --charcoal:#2B3238;
+  --charcoal-2:#37404A;
+  --steel:#4A5560;
+  --steel-deep:#232A30;
+  --accent:#F5B700;
+  --accent-hover:#DDA400;
+  --paper:#EDECE6;
+  --white:#FFFFFF;
+  --stone:#5B6066;
+  --line:#CFD0CC;
+  --display:"Barlow Condensed","Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --script:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --max:1180px;
+  --header-h:72px;
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{overflow-x:clip;scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 8px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;font-family:var(--body);font-size:1.0625rem;line-height:1.6;color:var(--charcoal);background:var(--paper);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--accent);color:var(--charcoal);padding:10px 16px;border-radius:0;font-weight:600;z-index:100}
+.skip:focus{left:12px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0;letter-spacing:.01em}
+h2{font-size:clamp(2.1rem,4.5vw,3.1rem);font-weight:800;text-transform:uppercase;letter-spacing:.02em}
+h2::after{content:"";display:block;width:56px;height:4px;background:var(--accent);margin-top:14px}
+h3{font-size:1.45rem;font-weight:700}
+.lede{font-size:1.15rem;color:var(--stone);max-width:60ch;margin:.75rem 0 0}
+section{padding:clamp(64px,9vw,112px) 0}
+
+/* ============ Buttons ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:52px;padding:0 1.5em;border-radius:0;font-family:var(--display);font-weight:700;font-size:1.2rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-lime{background:var(--accent);color:var(--charcoal)}
+.btn-lime:hover{background:var(--accent-hover)}
+.btn-ghost{border-color:rgba(255,255,255,.75);color:var(--white);background:rgba(255,255,255,.04)}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+.btn-dark{background:var(--charcoal);color:var(--white)}
+.btn-dark:hover{background:var(--charcoal-2)}
+.btn-outline{border-color:var(--charcoal);color:var(--charcoal);background:transparent}
+.btn-outline:hover{background:var(--charcoal);color:var(--white)}
+
+/* ============ Header ============ */
+.site-header{position:sticky;top:0;z-index:50;background:var(--charcoal);border-bottom:6px solid var(--accent);border-image:repeating-linear-gradient(-45deg,var(--accent) 0 12px,var(--charcoal) 12px 24px) 6;color:var(--white);padding-top:env(safe-area-inset-top,0px)}
+.site-header .wrap{display:flex;align-items:center;gap:20px;height:var(--header-h)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto;min-width:0}
+.badge{width:54px;height:54px;border-radius:50%;background:var(--charcoal);border:2px solid var(--accent);box-shadow:0 0 0 2px var(--charcoal);display:grid;place-items:center;overflow:hidden;flex:none}
+.badge img{width:100%;height:100%;object-fit:contain}
+.badge span{font-family:var(--display);font-weight:800;color:var(--accent);font-size:1rem}
+.brand-name{font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand-name small{display:block;font-family:var(--script);font-style:normal;font-weight:400;letter-spacing:0;text-transform:none;font-size:.95rem;color:#B8BCC0;margin-top:-2px}
+.nav{display:flex;gap:4px}
+.nav a{text-decoration:none;padding:10px 14px;border-radius:0;font-weight:500;color:#E4E6E8}
+.nav a:hover{background:rgba(255,255,255,.08);color:var(--white)}
+.header-call{min-height:44px;font-size:1.05rem;padding:0 1.1em}
+.menu-btn{display:none;background:none;border:0;color:var(--white);width:44px;height:44px;border-radius:0;cursor:pointer}
+.menu-btn svg{width:26px;height:26px}
+@media (max-width:960px){
+  .nav{position:absolute;left:0;right:0;top:100%;flex-direction:column;background:var(--charcoal);padding:8px 16px 18px;display:none;border-top:1px solid rgba(255,255,255,.08)}
+  .nav.open{display:flex}
+  .nav a{padding:14px 12px;font-size:1.1rem}
+  .menu-btn{display:grid;place-items:center}
+  .header-call{display:none}
+}
+@media (max-width:480px){.brand-name{font-size:1rem;letter-spacing:.1em}}
+
+/* ============ Emergency strip ============ */
+.emergency{background:var(--accent);color:var(--charcoal);text-transform:uppercase;letter-spacing:.04em;font-weight:600}
+.emergency .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 14px;padding-top:10px;padding-bottom:10px;text-align:center}
+.emergency a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:600px){.emergency{font-size:.85rem;letter-spacing:.02em}.emergency .wrap{gap:4px 10px;padding-top:9px;padding-bottom:9px}.emergency .pulse{display:none}}
+.pulse{width:10px;height:10px;border-radius:50%;background:#2B3238;box-shadow:0 0 0 0 rgba(43,50,56,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(43,50,56,0)}100%{box-shadow:0 0 0 0 rgba(43,50,56,0)}}
+
+/* ============ Hero ============ */
+.hero{position:relative;color:var(--white);padding:clamp(80px,13vw,150px) 0 clamp(70px,10vw,120px);overflow:hidden;
+  background:linear-gradient(180deg,rgba(30,36,41,.72),rgba(30,36,41,.82)),
+  url("images/hero-kitchen.jpg") center/cover no-repeat,
+  linear-gradient(135deg,#2A2F34,#2B3238)}
+.hero .wrap{text-align:center}
+.hero h1{font-size:clamp(2.4rem,7.2vw,5.4rem);font-weight:800;letter-spacing:.12em;text-transform:uppercase;line-height:1}
+.hero h1 span{display:block;font-size:.42em;letter-spacing:.42em;margin-top:.5em;color:#D4D7DA}
+.tagline{font-family:var(--script);font-style:normal;font-size:clamp(1.6rem,3.6vw,2.4rem);margin:.7rem 0 0;color:#F2F3F4}
+.hero-sub{max-width:52ch;margin:1.1rem auto 0;color:#D4D7DA;font-size:1.12rem}
+.hero-ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:2rem}
+.trust{list-style:none;padding:0;margin:2.6rem auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;font-weight:500;color:#E4E6E8}
+.trust li{display:flex;align-items:center;gap:8px}
+.trust svg{width:20px;height:20px;color:var(--accent);flex:none}
+@media (max-width:600px){.trust{display:grid;justify-content:center;gap:12px;text-align:left}.trust li{align-items:flex-start}}
+
+/* ============ Services ============ */
+.services{background:var(--white)}
+.services-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:20px}
+.service-list{list-style:none;padding:0;margin:3rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));border-top:1px solid var(--line)}
+.service-list li{display:flex;gap:18px;padding:28px 24px 28px 0;border-bottom:1px solid var(--line)}
+.ico{flex:none;width:56px;height:56px;border-radius:0;background:transparent;border:2px solid var(--charcoal);color:var(--charcoal);display:grid;place-items:center}
+.ico svg{width:28px;height:28px}
+.service-list p{margin:.35rem 0 0;color:var(--stone);font-size:1rem}
+.scope{display:flex;flex-wrap:wrap;gap:8px;margin-top:2rem}
+.scope span{border:1px solid var(--line);background:var(--paper);border-radius:0;padding:6px 14px;font-size:.95rem;font-weight:500}
+
+/* ============ Process ============ */
+.process{background:var(--steel-deep);color:var(--white)}
+.process .lede{color:#C3C8CD}
+.steps{list-style:none;counter-reset:s;padding:0;margin:3rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:32px}
+.steps li{counter-increment:s;border-top:3px solid var(--accent);padding-top:18px}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:800;font-size:2.6rem;color:var(--accent);line-height:1;display:block;margin-bottom:8px}
+.steps p{margin:.35rem 0 0;color:#C3C8CD}
+
+/* ============ Gallery ============ */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:12px;margin-top:2.5rem}
+@media (max-width:600px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}
+.gallery-grid button{all:unset;cursor:zoom-in;display:block;aspect-ratio:1/1;border-radius:0;overflow:hidden;background:#D6D7D4 linear-gradient(135deg,#DADBD8,#C6C7C3);position:relative}
+.gallery-grid button:focus-visible{outline:3px solid var(--steel);outline-offset:3px}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .35s,filter .35s;filter:saturate(.9) contrast(1.05)}
+.gallery-grid button:hover img{transform:scale(1.04)}
+.gallery-grid .hidden{display:none}
+.gallery-more{margin-top:1.8rem;text-align:center}
+.lightbox{position:fixed;inset:0;background:rgba(20,22,21,.94);display:none;align-items:center;justify-content:center;z-index:200;padding:calc(env(safe-area-inset-top,0px) + 56px) 16px calc(env(safe-area-inset-bottom,0px) + 56px)}
+.lightbox.open{display:flex}
+.lightbox img{max-height:100%;max-width:min(1100px,100%);object-fit:contain;border-radius:0}
+.lb-btn{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:48px;height:48px;border-radius:0;cursor:pointer;display:grid;place-items:center}
+.lb-btn:hover{background:rgba(255,255,255,.24)}
+.lb-btn svg{width:24px;height:24px}
+.lb-close{top:calc(env(safe-area-inset-top,0px) + 12px);right:16px}
+.lb-prev{left:16px;top:50%;transform:translateY(-50%)}
+.lb-next{right:16px;top:50%;transform:translateY(-50%)}
+.lb-count{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);left:0;right:0;text-align:center;color:#B8BCC0;font-size:.95rem}
+
+/* ============ Reviews ============ */
+.reviews{background:var(--white)}
+.reviews-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px}
+.stars{display:inline-flex;gap:2px;color:#F5B700}
+.stars svg{width:18px;height:18px}
+.stars .off{color:#D2D3D0}
+.review-track{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:18px;margin-top:2.5rem}
+.review{border:1px solid var(--line);border-top:4px solid var(--charcoal);border-radius:0;padding:24px;display:flex;flex-direction:column;gap:12px;background:var(--white)}
+.review-top{display:flex;align-items:center;gap:12px}
+.avatar{width:44px;height:44px;border-radius:0;background:var(--steel);color:#fff;display:grid;place-items:center;font-weight:700;overflow:hidden;flex:none}
+.review-name{font-weight:600;text-decoration:none}
+.review-when{font-size:.88rem;color:var(--stone)}
+.review-text{margin:0;font-size:1rem}
+
+/* ============ Service area ============ */
+.area{background:var(--paper)}
+.area-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+.counties{list-style:none;padding:0;margin:1.8rem 0 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.counties li{background:var(--white);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:0;padding:14px 16px;font-weight:600}
+.counties li small{display:block;font-weight:400;color:var(--stone)}
+.area-quote{font-family:var(--script);font-style:normal;font-weight:700;text-transform:uppercase;font-size:clamp(1.8rem,3.6vw,2.6rem);line-height:1.2;color:var(--steel-deep);margin:0}
+.area-quote + p{color:var(--stone);margin-top:1rem}
+@media (max-width:820px){.area-grid{grid-template-columns:1fr}}
+
+/* ============ Contact ============ */
+.contact{background:var(--charcoal);color:var(--white)}
+.contact .lede{color:#B8BCC0}
+.contact-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:clamp(28px,5vw,64px);margin-top:2.5rem}
+.contact-cards{display:flex;flex-direction:column;gap:12px}
+.c-card{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:0;background:var(--charcoal-2);text-decoration:none;border:1px solid rgba(255,255,255,.06)}
+a.c-card:hover{border-color:var(--accent)}
+.c-card svg{width:24px;height:24px;color:var(--accent);flex:none}
+.c-card small{display:block;color:#9DA2A7;font-size:.88rem}
+.c-card strong{font-size:1.15rem;font-weight:600;overflow-wrap:break-word}
+.c-card .c-email{font-size:clamp(.95rem,3.9vw,1.15rem)}
+.socials{display:flex;gap:10px;margin-top:8px}
+.socials a{width:46px;height:46px;border-radius:0;background:var(--charcoal-2);display:grid;place-items:center}
+.socials a:hover{background:var(--steel)}
+.socials svg{width:22px;height:22px}
+form.quote{background:var(--white);color:var(--charcoal);border-radius:0;padding:clamp(22px,4vw,36px)}
+form.quote h3{font-size:1.9rem}
+form.quote > p{margin:.3rem 0 1.4rem;color:var(--stone)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-weight:600;font-size:.95rem}
+.field label .opt{font-weight:400;color:var(--stone)}
+.field input,.field select,.field textarea{font:inherit;font-size:1rem;padding:12px 14px;border:1.5px solid #BFC1BD;border-radius:0;background:#FFFFFF;color:var(--charcoal);min-height:48px;width:100%}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--steel);box-shadow:0 0 0 3px rgba(245,183,0,.35)}
+.field[data-error] input,.field[data-error] select,.field[data-error] textarea{border-color:#B3261E}
+.err{color:#B3261E;font-size:.88rem;min-height:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{font-weight:500;position:relative}
+.chips input{position:absolute;inset:0;width:100%;height:100%;min-height:0;margin:0;padding:0;opacity:0;pointer-events:none}
+.chips span{display:inline-block;border:1.5px solid #BFC1BD;border-radius:0;padding:8px 16px;cursor:pointer;font-size:.95rem}
+.chips input:checked + span{background:var(--charcoal);border-color:var(--charcoal);color:#fff}
+.chips input:focus-visible + span{outline:3px solid var(--accent);outline-offset:2px}
+.form-foot{display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-top:1.4rem}
+.form-foot small{color:var(--stone)}
+.form-status{margin-top:1rem;padding:14px 16px;border-radius:0;display:none;font-weight:500}
+.form-status.ok{display:block;background:#FFF4CC;color:#5C4500}
+.form-status.bad{display:block;background:#FBE9E7;color:#8C1D18}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.fields{grid-template-columns:1fr}}
+
+/* ============ Footer ============ */
+footer{background:#1F252A;color:#9DA2A7;padding:36px 0 calc(36px + env(safe-area-inset-bottom,0px));font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+.credit{flex-basis:100%;border-top:1px solid #3A434C;padding-top:16px;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:#7E848A}
+.credit a{color:var(--accent);font-weight:600;text-decoration:none}
+.credit a:hover{text-decoration:underline;text-underline-offset:3px}
+footer a{color:#E4E6E8}
+
+/* ============ Mobile action bar ============ */
+.mobile-bar{display:none}
+@media (max-width:760px){
+  .mobile-bar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(43,50,56,.97);padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));box-shadow:0 -6px 20px rgba(0,0,0,.18)}
+  .mobile-bar .btn{min-height:50px;font-size:1.1rem}
+  footer{padding-bottom:calc(110px + env(safe-area-inset-bottom,0px))}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ======================= CONFIG: edit these before going live ======================= -->
+<script>
+window.YTC_CONFIG = {
+  // Link to the company's Google reviews. Best: the share link from Google Business Profile (looks like https://g.page/r/...).
+  googleReviewsUrl: "https://www.google.com/maps/search/?api=1&query=Yours%20Truly%20Contracting%20Group%20LLC%2016%20Covington%20Rd%20Yonkers%20NY",
+  // Optional: a form endpoint (Formspree, Getform, Basin, your own server). Leave empty to send quotes by email instead.
+  formEndpoint: "",
+  email: "yourstrulycontracting@gmail.com",
+  instagram: "https://www.instagram.com/",
+  linkedin: "https://www.linkedin.com/company/98882603/"
+};
+</script>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Yours Truly Contracting Group, back to top">
+      <span class="badge">
+        <img src="images/logo.png" width="54" height="54" alt="" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'YTC'}))">
+      </span>
+      <span class="brand-name">Yours Truly<small>Contracting Group LLC</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-lime header-call" href="tel:+19147712566">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      (914) 771-2566
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="emergency" role="note">
+  <div class="wrap">
+    <span class="pulse" aria-hidden="true"></span>
+    <span>24-hour emergency contractor — leaks, storm damage, electrical issues.</span>
+    <a href="tel:+19146594793">Call (914) 659-4793 any time</a>
+  </div>
+</div>
+
+<main id="main">
+  <!-- Hero -->
+  <section class="hero" id="top" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <h1 id="heroTitle">Yours Truly<span>Contracting Group LLC</span></h1>
+      <p class="tagline">"Your Vision Is Our Job"</p>
+      <p class="hero-sub">Kitchens, bathrooms, extensions, roofing and everything in between — residential and commercial, handled by one licensed crew from estimate to clean-up.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-lime" href="#contact">Get a free quote</a>
+        <a class="btn btn-ghost" href="tel:+19147712566">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call (914) 771-2566
+        </a>
+      </div>
+      <ul class="trust">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Licensed and insured</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24-hour emergency service</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Westchester, Rockland, Long Island and NYC</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services" aria-labelledby="servicesTitle">
+    <div class="wrap">
+      <div class="services-head">
+        <div>
+          <h2 id="servicesTitle">For all your construction needs</h2>
+          <p class="lede">One call covers the whole job. We handle interior and exterior work for homes and businesses.</p>
+        </div>
+        <a class="btn btn-outline" href="#contact">Ask about your project</a>
+      </div>
+      <ul class="service-list">
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 10h18M8 6h.01M12 6h.01M8 14v4M16 14v4"/></svg></span>
+          <div><h3>Kitchen remodeling</h3><p>Cabinets, countertops, backsplash, flooring and lighting — full gut or a refresh.</p></div></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-3z"/><path d="M6 12V5a2 2 0 0 1 4 0M7 20l-1 2M17 20l1 2"/></svg></span>
+          <div><h3>Bathroom remodeling</h3><p>Tile, vanities, showers and tubs, from half baths to primary suites.</p></div></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M14 20v-6h-4v6"/></svg></span>
+          <div><h3>Home extensions and renovations</h3><p>Additions, finished basements and whole-home renovations.</p></div></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12 12 3l10 9"/><path d="M5 9.5V21h14V9.5"/><path d="M5 14h14M5 17.5h14"/></svg></span>
+          <div><h3>Roofing, siding and facades</h3><p>Repairs, replacements and exterior upgrades that hold up to Northeast weather.</p></div></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="M2 10h20M2 15h20M8 4v6M16 10v5M8 15v5"/></svg></span>
+          <div><h3>Concrete, masonry and carpentry</h3><p>Steps, walkways, patios, framing, trim and custom woodwork.</p></div></li>
+        <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></span>
+          <div><h3>Plumbing and electrical</h3><p>Fixtures, lighting, panels and pipe work, including emergency calls.</p></div></li>
+      </ul>
+      <div class="scope" aria-label="Also available">
+        <span>Interior and exterior</span><span>Residential</span><span>Commercial</span><span>Painting</span><span>Flooring</span><span>Drywall</span><span>Power washing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process" aria-labelledby="processTitle">
+    <div class="wrap">
+      <h2 id="processTitle">How a project works</h2>
+      <p class="lede">No guesswork about what happens next.</p>
+      <ol class="steps">
+        <li><h3>Tell us what you need</h3><p>Call, text or send the quote form with a few details and photos if you have them.</p></li>
+        <li><h3>Free on-site estimate</h3><p>We walk the space with you, talk through options and give you a clear written price.</p></li>
+        <li><h3>We build it</h3><p>Our crew handles materials, scheduling and the work itself, and keeps you updated daily.</p></li>
+        <li><h3>Final walkthrough</h3><p>We check every detail with you and leave the site clean.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="work" aria-labelledby="workTitle">
+    <div class="wrap">
+      <h2 id="workTitle">Recent work</h2>
+      <p class="lede">Tap any photo to see it larger.</p>
+      <div class="gallery-grid" id="gallery"></div>
+      <div class="gallery-more"><button class="btn btn-outline" id="moreBtn" type="button">Show more photos</button></div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews" aria-labelledby="reviewsTitle">
+    <div class="wrap">
+      <div class="reviews-head">
+        <div>
+          <h2 id="reviewsTitle">What customers say</h2>
+          <p class="lede">A few words from recent clients. Read the rest on our Google profile.</p>
+        </div>
+        <a class="btn btn-dark js-google-reviews" target="_blank" rel="noopener" href="#"><svg style="width:20px;height:20px;background:#fff;border-radius:50%;padding:2px" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5a5.6 5.6 0 0 1-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.9-3a7.2 7.2 0 0 1-10.8-3.8h-4v3.1A12 12 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.3 14.3a7.2 7.2 0 0 1 0-4.6V6.6h-4a12 12 0 0 0 0 10.8z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4A12 12 0 0 0 1.3 6.6l4 3.1A7.2 7.2 0 0 1 12 4.8z"/></svg>View more on Google</a>
+      </div>
+      <div class="review-track">
+        <article class="review">
+          <div class="review-top">
+            <div class="avatar" aria-hidden="true">L</div>
+            <div><span class="review-name">Ludim Gomez</span><div class="review-when">Half bath remodel</div></div>
+          </div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+          <p class="review-text">The team at Yours Truly Contracting did a wonderful job remodeling our half bath. They listened carefully to all of my requests and maintained clear communication throughout the entire project. The team was friendly, professional, and worked very efficiently. We look forward to working with them again on future projects.</p>
+        </article>
+        <article class="review">
+          <div class="review-top">
+            <div class="avatar" aria-hidden="true">C</div>
+            <div><span class="review-name">Chris Herget</span><div class="review-when">Drywall, painting, masonry</div></div>
+          </div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+          <p class="review-text">I came across Yours Truly Contracting Group through an instagram add. After installing a Au pump, I needed drywall work and painting. Since then, Jay and his group have been my go to for any work from masonry jobs, to power-washing, and more. Easy with communication, flexible hours, and very good pricing. Would recommend for all jobs, big and small.</p>
+        </article>
+        <article class="review">
+          <div class="review-top">
+            <div class="avatar" aria-hidden="true">O</div>
+            <div><span class="review-name">Oneeb Haq</span><div class="review-when">Lighting, floors, painting</div></div>
+          </div>
+          <div class="stars" role="img" aria-label="5 out of 5 stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+          <p class="review-text">We had a great experience working with this company. They installed ceiling lights, stained hard wood floor and painted the whole house. The job was done with in agreed upon time. We were happy with their work. Highly recommend.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service area -->
+  <section class="area" id="area" aria-labelledby="areaTitle">
+    <div class="wrap area-grid">
+      <div>
+        <h2 id="areaTitle">Where we work</h2>
+        <p class="lede">Based in Yonkers and serving the whole metro area.</p>
+        <ul class="counties">
+          <li>Westchester County<small>Home base</small></li>
+          <li>Rockland County<small>NY</small></li>
+          <li>Nassau County<small>Long Island</small></li>
+          <li>Suffolk County<small>Long Island</small></li>
+          <li>The five boroughs<small>New York City</small></li>
+          <li>Not sure?<small><a href="tel:+19147712566">Call and ask</a></small></li>
+        </ul>
+      </div>
+      <div>
+        <p class="area-quote">"Your Vision Is Our Job"</p>
+        <p>Big or small, residential or commercial, you get the same crew start to finish, with honest pricing and clear communication the whole way through.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact" aria-labelledby="contactTitle">
+    <div class="wrap">
+      <h2 id="contactTitle">Get your free quote</h2>
+      <p class="lede">Tell us about the job and we'll get back to you within one business day. Need help now? Call us — we answer 24/7.</p>
+      <div class="contact-grid">
+        <div class="contact-cards">
+          <a class="c-card" href="tel:+19147712566">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            <span><small>Main line</small><strong>(914) 771-2566</strong></span></a>
+          <a class="c-card" href="tel:+19146594793">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span><small>Second line and emergencies</small><strong>(914) 659-4793</strong></span></a>
+          <a class="c-card" href="sms:+19147712566">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span><small>Text us photos of the job</small><strong>(914) 771-2566</strong></span></a>
+          <a class="c-card" href="mailto:yourstrulycontracting@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            <span><small>Email</small><strong class="c-email">yourstrulycontracting@<wbr>gmail.com</strong></span></a>
+          <div class="socials">
+            <a id="igLink" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a id="liLink" href="https://www.linkedin.com/company/98882603/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg></a>
+          </div>
+        </div>
+
+        <form class="quote" id="quoteForm" novalidate>
+          <h3>Request a free quote</h3>
+          <p>Fields marked optional can be skipped.</p>
+          <div class="fields">
+            <div class="field"><label for="fName">Name</label><input id="fName" name="name" autocomplete="name" required><span class="err"></span></div>
+            <div class="field"><label for="fPhone">Phone</label><input id="fPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required><span class="err"></span></div>
+            <div class="field"><label for="fEmail">Email <span class="opt">(optional)</span></label><input id="fEmail" name="email" type="email" autocomplete="email"><span class="err"></span></div>
+            <div class="field"><label for="fTown">Town or ZIP</label><input id="fTown" name="town" autocomplete="postal-code" required><span class="err"></span></div>
+            <div class="field full"><label for="fService">What do you need?</label>
+              <select id="fService" name="service" required>
+                <option value="">Choose a service</option>
+                <option>Kitchen remodeling</option><option>Bathroom remodeling</option>
+                <option>Home extension or renovation</option><option>Roofing, siding or facade</option>
+                <option>Concrete, masonry or carpentry</option><option>Plumbing or electrical</option>
+                <option>Painting, flooring or drywall</option><option>Emergency repair</option><option>Something else</option>
+              </select><span class="err"></span></div>
+            <div class="field full"><span id="whenLabel" style="font-weight:600;font-size:.95rem">When do you want to start?</span>
+              <div class="chips" role="radiogroup" aria-labelledby="whenLabel">
+                <label><input type="radio" name="timeline" value="As soon as possible" checked><span>As soon as possible</span></label>
+                <label><input type="radio" name="timeline" value="Within 1–3 months"><span>1–3 months</span></label>
+                <label><input type="radio" name="timeline" value="Just planning"><span>Just planning</span></label>
+              </div></div>
+            <div class="field full"><label for="fMsg">Project details <span class="opt">(optional)</span></label><textarea id="fMsg" name="message" placeholder="Size of the space, what you'd like changed, anything we should know"></textarea></div>
+          </div>
+          <div class="form-foot">
+            <button class="btn btn-lime" type="submit" id="submitBtn">Send my request</button>
+            <small>We never share your information.</small>
+          </div>
+          <div class="form-status" id="formStatus" role="status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Yours Truly Contracting Group LLC · Yonkers, NY · Licensed and insured</span>
+    <span><a href="tel:+19147712566">(914) 771-2566</a> &nbsp; <a href="tel:+19146594793">(914) 659-4793</a></span>
+    <span class="credit">Designed &amp; built by <a href="https://princeklair.com" target="_blank" rel="noopener">Prince Klair</a></span>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-lime" href="tel:+19147712566">Call now</a>
+  <a class="btn btn-ghost" href="#contact">Free quote</a>
+</div>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project photo">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m15 18-6-6 6-6"/></svg></button>
+  <img id="lbImg" alt="">
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m9 18 6-6-6-6"/></svg></button>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+
+<script>
+(function(){
+  const C = window.YTC_CONFIG;
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('igLink').href = C.instagram;
+  document.getElementById('liLink').href = C.linkedin;
+
+  /* ---------- Mobile menu ---------- */
+  const nav = document.getElementById('nav'), menuBtn = document.getElementById('menuBtn');
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); }));
+
+  /* ---------- Gallery ---------- */
+  // Project photos live in images/work/. To add one, save work-NN.jpg (full size) and work-NN-thumb.jpg (600x600) and bump PHOTO_COUNT.
+  const PHOTO_COUNT = 13;
+  const IDS = Array.from({length: PHOTO_COUNT}, (_, i) => String(i + 1).padStart(2, '0'));
+  const thumb = id => `images/work/work-${id}-thumb.jpg`;
+  const full  = id => `images/work/work-${id}.jpg`;
+  const SHOW = 8;
+  const gallery = document.getElementById('gallery'), moreBtn = document.getElementById('moreBtn');
+  IDS.forEach((id, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', `Open project photo ${i+1} of ${IDS.length}`);
+    if (i >= SHOW) b.classList.add('hidden');
+    const img = new Image(); img.loading = 'lazy'; img.alt = ''; img.src = thumb(id);
+    img.onerror = () => img.remove();
+    b.appendChild(img);
+    b.addEventListener('click', () => openLb(i));
+    gallery.appendChild(b);
+  });
+  if (IDS.length <= SHOW) moreBtn.parentElement.remove();
+  moreBtn.addEventListener('click', () => {
+    gallery.querySelectorAll('.hidden').forEach(el => el.classList.remove('hidden'));
+    moreBtn.parentElement.remove();
+    gallery.children[SHOW]?.focus();
+  });
+
+  /* ---------- Lightbox ---------- */
+  const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg'), lbCount = document.getElementById('lbCount');
+  let cur = 0, lastFocus = null;
+  function show(i){ cur = (i + IDS.length) % IDS.length; lbImg.src = full(IDS[cur]); lbImg.alt = `Project photo ${cur+1}`; lbCount.textContent = `${cur+1} / ${IDS.length}`; }
+  function openLb(i){ lastFocus = document.activeElement; show(i); lb.classList.add('open'); document.body.style.overflow='hidden'; document.getElementById('lbClose').focus(); }
+  function closeLb(){ lb.classList.remove('open'); document.body.style.overflow=''; lastFocus?.focus(); }
+  document.getElementById('lbClose').onclick = closeLb;
+  document.getElementById('lbPrev').onclick = () => show(cur-1);
+  document.getElementById('lbNext').onclick = () => show(cur+1);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLb();
+    if (e.key === 'ArrowLeft') show(cur-1);
+    if (e.key === 'ArrowRight') show(cur+1);
+  });
+  let tx = null;
+  lb.addEventListener('touchstart', e => tx = e.touches[0].clientX, {passive:true});
+  lb.addEventListener('touchend', e => { if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); tx = null; });
+
+  /* ---------- Google reviews link ---------- */
+  document.querySelectorAll('.js-google-reviews').forEach(a => a.href = C.googleReviewsUrl);
+
+  /* ---------- Quote form ---------- */
+  const form = document.getElementById('quoteForm'), status = document.getElementById('formStatus'), submitBtn = document.getElementById('submitBtn');
+  const MSG = { name:'Enter your name.', phone:'Enter a phone number we can reach you at.', town:'Enter your town or ZIP so we know the location.', service:'Choose the type of work.', email:'Check the email address format.' };
+  function validate(){
+    let firstBad = null;
+    form.querySelectorAll('.field').forEach(f => {
+      const el = f.querySelector('input:not([type=radio]),select,textarea'); if (!el) return;
+      const errEl = f.querySelector('.err'); let msg = '';
+      const v = el.value.trim();
+      if (el.required && !v) msg = MSG[el.name];
+      else if (el.name === 'phone' && v.replace(/\D/g,'').length < 10) msg = 'Enter a 10-digit phone number.';
+      else if (el.type === 'email' && v && !/^\S+@\S+\.\S+$/.test(v)) msg = MSG.email;
+      if (msg){ f.setAttribute('data-error',''); errEl.textContent = msg; el.setAttribute('aria-invalid','true'); firstBad ??= el; }
+      else { f.removeAttribute('data-error'); errEl.textContent = ''; el.removeAttribute('aria-invalid'); }
+    });
+    firstBad?.focus();
+    return !firstBad;
+  }
+  form.addEventListener('input', e => { const f = e.target.closest('.field'); if (f?.hasAttribute('data-error')) validate(); });
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    status.className = 'form-status';
+    if (!validate()) return;
+    const data = Object.fromEntries(new FormData(form));
+    if (C.formEndpoint){
+      submitBtn.disabled = true; submitBtn.textContent = 'Sending…';
+      try{
+        const res = await fetch(C.formEndpoint, { method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(data) });
+        if (!res.ok) throw new Error(res.status);
+        form.reset();
+        status.className = 'form-status ok';
+        status.textContent = `Request sent. We'll call you at ${data.phone} within one business day.`;
+      }catch{
+        status.className = 'form-status bad';
+        status.innerHTML = 'The request didn\'t go through. Call <a href="tel:+19147712566">(914) 771-2566</a> or try again.';
+      }finally{ submitBtn.disabled = false; submitBtn.textContent = 'Send my request'; }
+    } else {
+      const body = `Name: ${data.name}\nPhone: ${data.phone}\nEmail: ${data.email || '-'}\nTown/ZIP: ${data.town}\nService: ${data.service}\nTimeline: ${data.timeline}\n\n${data.message || ''}`;
+      window.location.href = `mailto:${C.email}?subject=${encodeURIComponent('Quote request: ' + data.service)}&body=${encodeURIComponent(body)}`;
+      status.className = 'form-status ok';
+      status.textContent = 'Your email app should open with the request filled in. Press send there to finish.';
+    }
+  });
+})();
+</script>
+</body>
+</html>
