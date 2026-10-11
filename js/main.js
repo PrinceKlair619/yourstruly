@@ -113,13 +113,24 @@
       if (lb.classList.contains('open')) showLb();
     }
 
-    document.querySelectorAll('.lib-filters button').forEach(btn => btn.addEventListener('click', () => {
-      document.querySelectorAll('.lib-filters button').forEach(b => b.setAttribute('aria-pressed', b === btn));
-      const cat = btn.dataset.cat;
+    // Category filter + optional A–Z sort by project title
+    let cat = 'all', az = false;
+    function applyView(){
       list = cat === 'all' ? PHOTOS : PHOTOS.filter(p => p.cat === cat);
+      if (az) list = [...list].sort((a, b) => a.title.localeCompare(b.title));
       renderStrip();
       select(0);
+    }
+    document.querySelectorAll('.lib-filters [data-cat]').forEach(btn => btn.addEventListener('click', () => {
+      document.querySelectorAll('.lib-filters [data-cat]').forEach(b => b.setAttribute('aria-pressed', b === btn));
+      cat = btn.dataset.cat;
+      applyView();
     }));
+    $('libSort').addEventListener('click', () => {
+      az = !az;
+      $('libSort').setAttribute('aria-pressed', az);
+      applyView();
+    });
     document.querySelectorAll('.lib-filters [data-cat]').forEach(b => {
       const n = b.dataset.cat === 'all' ? PHOTOS.length : PHOTOS.filter(p => p.cat === b.dataset.cat).length;
       b.querySelector('small').textContent = n;

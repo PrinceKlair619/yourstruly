@@ -226,6 +226,7 @@ form.quote > p{margin:.3rem 0 1.4rem;color:var(--stone)}
 /* ============ Shared text bits ============ */
 .eyebrow{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:#8A6A1C;margin:0 0 .9rem}
 .prose p{color:var(--stone);margin:1rem 0 0;max-width:62ch}
+.prose strong{color:var(--charcoal);font-weight:600}
 .prose p:first-of-type{margin-top:1.4rem}
 
 /* ============ Home: about ============ */
@@ -279,6 +280,9 @@ form.quote > p{margin:.3rem 0 1.4rem;color:var(--stone)}
 .lib-filters button:hover{border-color:var(--accent)}
 .lib-filters button small{font-size:.78rem;opacity:.7}
 .lib-filters button[aria-pressed=true]{background:var(--gold-grad);color:#0F0F0F;border-color:transparent;font-weight:600}
+.lib-sort{margin-left:auto}
+.lib-sort svg{width:18px;height:18px}
+@media (max-width:600px){.lib-sort{margin-left:0}}
 .lib-stage{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(0,1fr);background:#141414;border:1px solid rgba(242,214,138,.18)}
 .lib-view{position:relative;margin:0;aspect-ratio:4/3;overflow:hidden;background:#000}
 .lib-bg{position:absolute;inset:-40px;background:center/cover no-repeat;filter:blur(30px) brightness(.4) saturate(1.1);transition:background-image .3s}
